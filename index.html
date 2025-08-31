@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agro Solutio</title>
 
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logo.png" />
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,31 +77,38 @@
             <div class="container">
                 <div class="section-title animated">
                     <h2>A Solução: Informação que Vira Ação</h2>
-                    <p>Traduzimos dados complexos em orientações simples, entregues direto no celular do produtor.
-                    </p>
+                    <p>Traduzimos dados complexos em orientações simples, entregues direto no celular do produtor.</p>
                 </div>
 
-                <img class="step-by-step-item animated">
-                <img src="assets/images/grafico.png"
-                    alt="Ilustração de um gráfico de barras crescente ao lado de um celular mostrando o clima e uma planta.">
-                <div class="step-content">
-                    <div class="step-number">01</div>
-                    <h3>Coleta e Tratamento de Dados</h3>
-                    <p>Juntamos informações de solo e clima e transformamos em recomendações
-                        práticas para o campo.
-                    </p>
-                </div>
-                </img>
-                <div class="step-by-step-item animated">
-                    <div class="step-image"><img src="assets/images/alertawhatss.png"
-                            alt="Ilustração de um celular exibindo o ícone do WhatsApp com uma notificação de alerta.">
+                <div class="step-by-step-container">
+                    <div class="step-by-step-item animated">
+                        <div class="step-image">
+                            <img src="assets/images/grafico.png"
+                                alt="Ilustração de um gráfico de barras crescente ao lado de um celular mostrando o clima e uma planta.">
+                        </div>
+                        <div class="step-content">
+                            <div class="step-number">01</div>
+                            <h3>Coleta e Tratamento de Dados</h3>
+                            <p>Juntamos informações de solo e clima e transformamos em recomendações práticas para o
+                                campo.</p>
+                        </div>
                     </div>
-                    <div class="step-number">02</div>
-                    <h3>Alertas Simples e Diretos</h3>
-                    <p>As orientações chegam via WhatsApp e SMS, dizendo o que, quando, coporquê fazer –
-                        sem complicação.</p>
+
+                    <div class="step-by-step-item animated">
+                        <div class="step-image">
+                            <div class="step-image">
+                                <img src="assets/images/ExemploNotificacao.gif"
+                                    alt="Animação de uma notificação de alerta chegando no WhatsApp.">
+                            </div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-number">02</div>
+                            <h3>Alertas Simples e Diretos</h3>
+                            <p>As orientações chegam via WhatsApp e SMS, dizendo o que, quando, como e porquê fazer –
+                                sem complicação.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </section>
 
         <section class="section dark-section" id="unfair-advantage">
@@ -174,27 +181,26 @@
         <section class="section dark-section" id="results">
             <div class="container">
                 <div class="section-title animated">
-                    <h2>Resultados Reais</h2>
-                        <div class="column-image animated">
-                            <img src="assets/images/mapa.png"
-                    alt="Mapa da Nova Alta Paulista">
+                    <h2>Análise da Região</h2>
+                    <div class="column-image animated">
+                        <img class="mapa" src="assets/images/mapa.png" alt="Mapa da Nova Alta Paulista">
+                    </div>
+                    <div class="results-grid animated">
+                        <div class="result-item">
+                            <span class="counter">35,4</span><span>%</span>
+                            <h3>Até 10 ha na região</h3>
                         </div>
-                    <p>Métricas chave que demonstram o impacto da nossa solução no campo.</p>
-                </div>
-                <div class="results-grid animated">
-                    <div class="result-item">
-                        <span class="counter">15</span><span>%</span>
-                        <h3>Aumento Médio de Produtividade</h3>
-                    </div>
-                    <div class="result-item">
-                        <span class="counter">95</span><span>%</span>
-                        <h3>Satisfação dos Produtores</h3>
-                    </div>
-                    <div class="result-item">
-                        <span class="counter">20</span><span>%</span>
-                        <h3>Redução de Perdas por Atraso</h3>
+                        <div class="result-item">
+                            <span class="counter">156.211</span><span>ha</span>
+                            <h3>Cana de Açúcar na Região de Dracena</h3>
+                        </div>
+                        <div class="result-item">
+                            <span class="counter">156.211</span><span>ha</span>
+                            <h3>Cana de Açúcar na Região de Dracena</h3>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -222,9 +228,26 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-bottom">
+            <div class="footer-icons" style="text-align: center; margin-bottom: 10px;">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener"
+                    style="margin: 0 15px; color: inherit; text-decoration: none;">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener"
+                    style="margin: 0 15px; color: inherit; text-decoration: none;">
+                    <i class="fab fa-x-twitter fa-2x"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                    style="margin: 0 15px; color: inherit; text-decoration: none;">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="mailto:seuemail@gmail.com" style="margin: 0 15px; color: inherit; text-decoration: none;">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+            </div>
+            <div class="footer-bottom" style="text-align: center;">
                 <p>2025 AgroSolutio. Todos os direitos reservados.</p>
-                <p class="hackathon-credit"> </p>
+                <p class="hackathon-credit"></p>
             </div>
         </div>
     </footer>
