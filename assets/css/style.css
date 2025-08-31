@@ -130,7 +130,7 @@ body {
 }
 
 .hero {
-  background-image: url(gif.gif); /* 1. Substitua pelo caminho do seu GIF */
+  background-image: url(assets/images/gif.gif); /* 1. Substitua pelo caminho do seu GIF */
   background-repeat: no-repeat; /* Opcional: para não repetir o GIF */
   background-size: cover; /* Opcional: para que o GIF cubra toda a área */
   background-position: center; /* Opcional: para centralizar o GIF */
