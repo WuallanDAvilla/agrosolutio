@@ -161,14 +161,14 @@
         }
 
         .hero h1 {
-            font-size: 3.2rem;
+            font-size: 2.2rem;
             margin: 0 0 20px 0;
             font-weight: 700;
             line-height: 1.3;
         }
 
         .hero p {
-            font-size: 1.25rem;
+            font-size: 1.10rem;
             margin-bottom: 40px;
             font-weight: 400;
             opacity: 0.9;
@@ -399,6 +399,35 @@
             margin-bottom: 20px;
         }
 
+        .secao {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 80px 20px;
+            background: #f9f5ee;
+            /* fundo igual ao anterior */
+        }
+
+        .conteudo img {
+            max-width: 220px;
+            margin-bottom: 20px;
+        }
+
+        .conteudo h3 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #1b2e1f;
+            margin-bottom: 8px;
+        }
+
+        .conteudo p {
+            font-size: 14px;
+            color: #555;
+            max-width: 600px;
+        }
+
         .modal {
             display: none;
             position: fixed;
@@ -433,6 +462,20 @@
             position: absolute;
             top: 15px;
             right: 25px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            /* fica em coluna */
+            align-items: flex-end;
+            /* joga todo o conteúdo para a direita */
+            justify-content: center;
+            /* centraliza na vertical */
+            text-align: right;
+            /* alinha os textos para a direita */
+            min-height: 100vh;
+            padding: 100px 80px;
         }
 
         .close-button:hover,
@@ -561,9 +604,11 @@
     <main>
         <section class="hero">
             <div class="hero-content animated">
-                <h1>Recomendações simples pelo WhatsApp que cruzam solo e clima para aumentar a produtividade.</h1>
-                <p>A solução ideal para cooperativas e associações rurais da Alta Paulista que atendem produtores de 40
-                    a 60+ anos.</p>
+                <h1>Mais colheita, menos desperdício: Inteligência agrícola na palma da mão
+
+                </h1>
+                <p>Ajudamos pequenos produtores a tomar decisões melhores no campo, com recomendações simples que
+                    aumentam a produtividade e reduzem custos.</p>
                 <a href="#solution" class="hero-button"><i class="fab fa-whatsapp"></i> Descubra como</a>
             </div>
         </section>
@@ -573,27 +618,12 @@
                 <div class="two-column-layout">
                     <div class="column-text animated">
                         <div class="section-title" style="text-align: left; margin-bottom: 40px;">
-                            <h2>O Problema</h2>
-                            <p style="margin: 0;">Identificamos as barreiras que impedem o pequeno produtor de
-                                aproveitar a tecnologia.</p>
+                            <h2>O Desafio do Produtor</h2>
+                            <p style="margin: 0;">O pequeno produtor confia no WhatsApp para se comunicar.
+                                No entanto, as informações agrícolas chegam em formatos que ele não entende nem aplica.
+                                Isso gera frustração, insegurança e desperdício no campo.</p>
                         </div>
                         <div class="problem-list">
-                            <div class="problem-list-item">
-                                <div class="icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                                <div class="text">
-                                    <h3>Baixa Adoção Tecnológica</h3>
-                                    <p>O público-alvo (40-60+) desconfia de novos apps e prefere ferramentas que já
-                                        domina, como o WhatsApp.</p>
-                                </div>
-                            </div>
-                            <div class="problem-list-item">
-                                <div class="icon"><i class="fa-solid fa-circle-question"></i></div>
-                                <div class="text">
-                                    <h3>Como as Infos Chegam?</h3>
-                                    <p>De forma fragmentada e técnica. Laudos e dados climáticos não se convertem em
-                                        ações práticas facilmente.</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="column-image animated">
@@ -607,20 +637,22 @@
         <section class="section" id="solution">
             <div class="container">
                 <div class="section-title animated">
-                    <h2>A Solução: Um Processo Simples</h2>
-                    <p>Transformamos dados complexos em recomendações diretas em três etapas.</p>
+                    <h2>A Solução: Informação que Vira Ação</h2>
+                    <p>Traduzimos dados complexos em orientações simples, entregues direto no celular do produtor.</p>
                 </div>
 
                 <div class="step-by-step-item animated">
-                    <div class="step-image"><img
-                            src="https://placehold.co/500x350/F5EFE6/1A4D2E?text=Dados+de+Solo+%2B+Clima"
-                            alt="[Ilustração de dados de solo e clima sendo coletados]"></div>
+                    <div class="step-image"><img <img src="grafico.png" alt="Dados do Solo + Clima">
+                        <!-- src="https://placehold.co/500x350/F5EFE6/1A4D2E?text=Dados+de+Solo+%2B+Clima" -->
+                    </div>
                     <div class="step-content">
                         <div class="step-number">01</div>
-                        <h3>Integração de Dados</h3>
-                        <p>Combinamos laudos de solo (LUPA, CATI) com dados de clima (Climatempo, IPMET) para criar um
-                            panorama completo.</p>
+                        <h3>Coleta e Tratamento de Dados</h3>
+                        <p>Juntamos informações de solo e clima e transformamos em recomendações práticas para o campo.
+                        </p>
                     </div>
+                    <!-- <img src="grafico.png" > -->
+
                 </div>
                 <div class="step-by-step-item animated">
                     <div class="step-image"><img
@@ -628,9 +660,9 @@
                             alt="[Ilustração de um cérebro processando os dados]"></div>
                     <div class="step-content">
                         <div class="step-number">02</div>
-                        <h3>Análise e "Tradução"</h3>
-                        <p>Nosso sistema analisa a combinação de dados e "traduz" os insights técnicos em ações práticas
-                            para o produtor.</p>
+                        <h3>Alertas Simples e Diretos</h3>
+                        <p>As orientações chegam via WhatsApp e SMS, dizendo o que fazer, quando fazer e por quê –
+                            sem complicação.</p>
                     </div>
                 </div>
                 <div class="step-by-step-item animated">
@@ -639,6 +671,8 @@
                             alt="[Ilustração de uma mensagem de alerta chegando no celular]"></div>
                     <div class="step-content">
                         <div class="step-number">03</div>
+                        <img src="alertawhatss.png" alt="Alerta via WhatsApp"
+                            style="max-width:240px; margin-bottom:30px;">>
                         <h3>Envio Automático de Alertas</h3>
                         <p>A recomendação final é enviada via WhatsApp, informando o que fazer, quando fazer e por quê.
                         </p>
@@ -651,27 +685,26 @@
             <div class="container">
                 <div class="section-title animated">
                     <h2>Vantagem Competitiva</h2>
-                    <p>Nosso diferencial é impossível de ser copiado facilmente porque é baseado na simplicidade e no
-                        foco local.</p>
+                    <p>O que entregamos não é só informação, é solução prática para a sua roça..</p>
                 </div>
                 <div class="advantage-grid">
                     <div class="advantage-item animated">
                         <div class="icon"><i class="fa-solid fa-hand-sparkles"></i></div>
-                        <h3>Simplicidade Extrema</h3>
-                        <p>Não somos um aplicativo. Se o produtor usa o WhatsApp, ele usa nossa solução. A barreira de
-                            entrada é zero.</p>
+                        <h3>Simplicidade</h3>
+                        <p>Nada de complicação: se você tem WhatsApp, já pode usar. Sem aplicativos, sem burocracia,
+                            direto no seu celular.</p>
                     </div>
                     <div class="advantage-item animated">
                         <div class="icon"><i class="fa-solid fa-map-location-dot"></i></div>
-                        <h3>Regionalização Total</h3>
-                        <p>Nossos dados, parcerias e conhecimento são hiper-focados na realidade da Alta Paulista,
-                            garantindo máxima relevância.</p>
+                        <h3>Conexão Total</h3>
+                        <p>Tudo feito com foco na Alta Paulista: dados, parcerias e conhecimento que falam a sua língua
+                            e entendem sua realidade.</p>
                     </div>
                     <div class="advantage-item animated">
                         <div class="icon"><i class="fa-solid fa-language"></i></div>
-                        <h3>Tradução Técnica em Ação</h3>
-                        <p>Nossa maior força é transformar dados brutos em recomendações. Nós não apenas informamos, nós
-                            orientamos.</p>
+                        <h3>Ciência aplicada ao campo</h3>
+                        <p>A gente pega os dados difíceis e traduz em orientação prática para o produtor. Você não
+                            recebe só números, recebe o caminho certo para agir.</p>
                     </div>
                 </div>
             </div>
@@ -681,31 +714,31 @@
             <div class="container">
                 <div class="section-title animated">
                     <h2>Canais de Acesso</h2>
-                    <p>Chegamos ao produtor através das instituições que ele mais confia.</p>
+                    <p>Você pode contar com o Agro Solutio nos canais em que mais confia.</p>
                 </div>
                 <div class="channel-list animated">
                     <div class="channel-item">
                         <div class="icon"><i class="fa-solid fa-handshake-angle"></i></div>
                         <div>
                             <h3>Parceria com Cooperativas</h3>
-                            <p>Nosso principal canal de vendas B2B, oferecendo o Agro Solutio como um benefício para os
-                                associados.</p>
+                            <p>Por meio das cooperativas, oferecemos o Agro Solutio diretamente a você, com vantagens
+                                pensadas para os produtores associados.</p>
                         </div>
                     </div>
                     <div class="channel-item">
                         <div class="icon"><i class="fab fa-whatsapp"></i></div>
                         <div>
-                            <h3>WhatsApp como Canal Principal</h3>
-                            <p>É o nosso produto, nosso canal de comunicação e nossa ferramenta de suporte. Tudo
-                                acontece aqui.</p>
+                            <h3>WhatsApp</h3>
+                            <p>Com o WhatsApp, você tira dúvidas, recebe suporte e acompanha novidades do Agro
+                                Solutio em tempo real.</p>
                         </div>
                     </div>
                     <div class="channel-item">
                         <div class="icon"><i class="fa-solid fa-store"></i></div>
                         <div>
                             <h3>Feiras e Eventos Rurais</h3>
-                            <p>Marcamos presença nos principais eventos da região para fortalecer o relacionamento e
-                                demonstrar a solução.</p>
+                            <p>Estamos presentes nas feiras e eventos rurais da região, para mostrar de perto como o
+                                Agro Solutio pode apoiar você.</p>
                         </div>
                     </div>
                 </div>
