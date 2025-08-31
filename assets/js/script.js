@@ -6,6 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const navMenu = document.querySelector(".nav-menu");
+  const navToggle = document.querySelector(".nav-toggle");
+  if (navToggle && navMenu) {
+    navToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  }
+
   const animatedElements = document.querySelectorAll(".animated");
   const appearOptions = { threshold: 0.15, rootMargin: "0px 0px -50px 0px" };
   const appearOnScroll = new IntersectionObserver((entries, observer) => {
