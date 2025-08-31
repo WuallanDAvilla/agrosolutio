@@ -30,40 +30,14 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   openButtons.forEach((btn) => {
-    btn.onclick = openModal;
+    btn.addEventListener("click", openModal);
   });
 
-  closeButton.onclick = closeModal;
+  closeButton.addEventListener("click", closeModal);
 
-  window.onclick = (event) => {
-    if (event.target == modal) {
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
       closeModal();
     }
-  };
+  });
 });
-
-// ...existing code...
-
-// Abrir o modal ao clicar no botão "Fale Conosco"
-document.querySelectorAll('.contact-modal-trigger').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-        document.getElementById('contactModal').style.display = 'block';
-    });
-});
-
-// Fechar o modal ao clicar no botão de fechar (×)
-document.querySelectorAll('.close-button').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-        document.getElementById('contactModal').style.display = 'none';
-    });
-});
-
-// Fechar o modal ao clicar fora do conteúdo
-window.addEventListener('click', function(event) {
-    const modal = document.getElementById('contactModal');
-    if (event.target === modal) {
-        modal.style.display = 'none';
-    }
-});
-
-// ...existing code...
