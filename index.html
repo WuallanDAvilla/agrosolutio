@@ -147,8 +147,12 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(26, 77, 46, 0.8), rgba(26, 77, 46, 0.7)), url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
-            color: var(--white-color);
+            
+ background-image: url(gif.gif); /* 1. Substitua pelo caminho do seu GIF */
+        background-repeat: no-repeat; /* Opcional: para não repetir o GIF */
+        background-size: cover; /* Opcional: para que o GIF cubra toda a área */
+        background-position: center; /* Opcional: para centralizar o GIF */
+        color: var(--white-color);
             text-align: center;
             padding: 180px 0 140px 0;
             display: flex;
@@ -391,10 +395,9 @@
         }
 
         .price-highlight {
-            font-weight: 700;
-            background-color: var(--cta-color);
+            font-size: 75px;
+            font-weight:700;
             padding: 5px 15px;
-            border-radius: 50px;
             display: inline-block;
             margin-bottom: 20px;
         }
@@ -515,6 +518,18 @@
         .modal-form button:hover {
             background-color: var(--accent-color);
         }
+
+        .resultados {
+  display: flex;
+  justify-content: space-around; /* espaço igual entre eles */
+  align-items: center; /* alinha no meio */
+  text-align: center; /* centraliza texto */
+}
+
+.resultado-item {
+  flex: 1; /* cada item ocupa o mesmo espaço */
+  margin: 0 20px; /* espaço lateral entre eles */
+}
 
         .footer {
             background-color: #1c1c1c;
@@ -661,7 +676,7 @@
                     <div class="step-content">
                         <div class="step-number">02</div>
                         <h3>Alertas Simples e Diretos</h3>
-                        <p>As orientações chegam via WhatsApp e SMS, dizendo o que fazer, quando fazer e por quê –
+                        <p>As orientações chegam via WhatsApp e SMS, dizendo o que, quando e porquê fazer –
                             sem complicação.</p>
                     </div>
                 </div>
@@ -674,7 +689,7 @@
                         <img src="alertawhatss.png" alt="Alerta via WhatsApp"
                             style="max-width:240px; margin-bottom:30px;">>
                         <h3>Envio Automático de Alertas</h3>
-                        <p>A recomendação final é enviada via WhatsApp, informando o que fazer, quando fazer e por quê.
+                        <p>Receber alertas automáticos garante que você não perca nenhuma informação importante, trazendo mais confiança e segurança na hora de agir.
                         </p>
                     </div>
                 </div>
@@ -685,25 +700,24 @@
             <div class="container">
                 <div class="section-title animated">
                     <h2>Vantagem Competitiva</h2>
-                    <p>O que entregamos não é só informação, é solução prática para a sua roça..</p>
+                    <p>O que entregamos não é só informação, é solução prática para a sua roça.</p>
                 </div>
                 <div class="advantage-grid">
                     <div class="advantage-item animated">
                         <div class="icon"><i class="fa-solid fa-hand-sparkles"></i></div>
                         <h3>Simplicidade</h3>
-                        <p>Nada de complicação: se você tem WhatsApp, já pode usar. Sem aplicativos, sem burocracia,
+                        <p>Nada de complicação: se você tem WhatsApp, já pode usar. Sem outros aplicativos, sem burocracia,
                             direto no seu celular.</p>
                     </div>
                     <div class="advantage-item animated">
                         <div class="icon"><i class="fa-solid fa-map-location-dot"></i></div>
                         <h3>Conexão Total</h3>
-                        <p>Tudo feito com foco na Alta Paulista: dados, parcerias e conhecimento que falam a sua língua
-                            e entendem sua realidade.</p>
+                        <p>Tudo feito com foco na Alta Paulista: dados, parcerias e conhecimento que compreendem sua realidade.</p>
                     </div>
                     <div class="advantage-item animated">
                         <div class="icon"><i class="fa-solid fa-language"></i></div>
                         <h3>Ciência aplicada ao campo</h3>
-                        <p>A gente pega os dados difíceis e traduz em orientação prática para o produtor. Você não
+                        <p>Nós coletamos os dados difíceis e Traduzimos em orientação prática para o produtor. Você não
                             recebe só números, recebe o caminho certo para agir.</p>
                     </div>
                 </div>
@@ -775,11 +789,11 @@
                     <p>Um modelo de negócio sustentável, focado em parcerias B2B.</p>
                 </div>
                 <div class="cta-section animated">
-                    <h2><span class="price-highlight">R$ 10 a R$ 20</span> / mês por produtor</h2>
+                    <h2 style="font-weight: 200;"><span class="price-highlight">R$ 49,90</span> / mês por produtor</h2>
                     <p>A cooperativa ou associação paga um valor mensal por produtor cadastrado, oferecendo a plataforma
                         como um benefício exclusivo para seus membros.</p>
                     <div class="revenue-streams">
-                        <p><strong>Fonte Secundária:</strong> Patrocínio de insumos por empresas parceiras.</p>
+                        <p style="font-size: 13px;">Fonte Secundária: Patrocínio de insumos por empresas parceiras.</p>
                     </div>
                     <button class="hero-button contact-modal-trigger">Seja um Parceiro</button>
                 </div>
@@ -790,7 +804,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-bottom">
-                <p>&copy; 2025 AgroSolutio. Todos os direitos reservados.</p>
+                <p>2025 AgroSolutio. Todos os direitos reservados.</p>
                 <p class="hackathon-credit">Uma ideia validada no Hackathon 2025 - Osvaldo Cruz, SP, pelo grupo
                     AgroSolutio.</p>
             </div>
