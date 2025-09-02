@@ -8,7 +8,6 @@
 
     <link rel="icon" type="image/png" href="assets/images/logo.png">
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,117 +25,117 @@
         <div class="container navbar">
             <a href="#" class="nav-logo"><img src="assets/images/logo.png" alt="Logo Agro Solutio"> Agro Solutio</a>
 
-            <button class="nav-toggle" aria-label="Abrir menu">
-                <i class="fas fa-bars"></i>
-            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#problem" class="nav-link">O Problema</a></li>
+                    <li><a href="#solution" class="nav-link">A Solução</a></li>
+                    <li><a href="#results" class="nav-link">Resultados</a></li>
+                    <li><a href="#cta" class="nav-link">Modelo de Negócio</a></li>
+                </ul>
+            </nav>
 
-            <ul class="nav-menu">
-                <li><a href="#problem" class="nav-link">O Problema</a></li>
-                <li><a href="#solution" class="nav-link">A Solução</a></li>
-                <li><a href="#results" class="nav-link">Resultados</a></li>
-                <li><a href="#cta" class="nav-link">Modelo de Negócio</a></li>
-            </ul>
             <div class="nav-cta">
                 <button class="contact-modal-trigger">Fale Conosco</button>
             </div>
+
+            <button class="nav-toggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
     <main>
         <section class="hero">
-            <div class="hero-content animated">
-                <h1>Mais colheita, menos desperdício: Inteligência agrícola na palma da mão</h1>
+            <div class="container hero-content">
+                <h1>Mais colheita, menos desperdício: Inteligência agrícola na palma da mão</h1>
                 <p>Ajudamos pequenos produtores a tomar decisões melhores no campo, com recomendações simples que
-                    aumentam a produtividade e reduzem custos.</p>
+                    aumentam a produtividade e reduzem custos.</p>
                 <a href="#solution" class="hero-button"><i class="fab fa-whatsapp"></i> Descubra como</a>
             </div>
         </section>
 
-        <section class="section section-light" id="problem">
-            <div class="container">
-                <div class="two-column-layout">
-                    <div class="column-text animated">
-                        <div class="section-title" style="text-align: left; margin-bottom: 40px;">
-                            <h2>O Desafio do Produtor</h2>
-                            <p style="margin: 0;">O pequeno produtor confia no WhatsApp para se comunicar.
-                                No entanto, as informações agrícolas chegam em formatos que ele não entende nem
-                                aplica.
-                                Isso gera frustração, insegurança e desperdício no campo.</p>
-                        </div>
-                        <div class="problem-list">
-                        </div>
-                    </div>
-                    <div class="column-image animated">
-                        <img src="assets/images/agricultor.png"
-                            alt="Produtor rural de macacão, agachado em um campo de soja, analisando a plantação.">
+        <section class="section" id="problem">
+            <div class="container two-column-layout">
+                <div class="column-text">
+                    <div class="section-title">
+                        <h2>O Desafio do Produtor</h2>
+                        <p>O pequeno produtor confia no WhatsApp para se comunicar.
+                            No entanto, as informações agrícolas chegam em formatos que ele não entende nem
+                            aplica.
+                            Isso gera frustração, insegurança e desperdício no campo.</p>
                     </div>
                 </div>
+                <div class="column-image">
+                    <img src="assets/images/agricultor.png"
+                        alt="Produtor rural de macacão, agachado em um campo de soja, analisando a plantação.">
+                </div>
+            </div>
         </section>
 
-        <section class="section" id="solution">
+        <section id="solution" class="section section-light">
             <div class="container">
-                <div class="section-title animated">
-                    <h2>A Solução: Informação que Vira Ação</h2>
-                    <p>Traduzimos dados complexos em orientações simples, entregues direto no celular do produtor.</p>
+                <div class="section-header">
+                    <h2 class="section-title">A Solução: Informação que Vira Ação</h2>
+                    <p class="section-subtitle">Traduzimos dados complexos em orientações simples, entregues direto no
+                        celular do produtor.</p>
                 </div>
 
-                <div class="step-by-step-container">
-                    <div class="step-by-step-item animated">
-                        <div class="step-image">
-                            <img src="assets/images/grafico.png"
-                                alt="Ilustração de um gráfico de barras crescente ao lado de um celular mostrando o clima e uma planta.">
-                        </div>
-                        <div class="step-content">
-                            <div class="step-number">01</div>
-                            <h3>Coleta e Tratamento de Dados</h3>
-                            <p>Juntamos informações de solo e clima e transformamos em recomendações práticas para o
-                                campo.</p>
-                        </div>
+                <div class="solution-step">
+                    <div class="step-image">
+                        <img src="assets/images/grafico.png" alt="Coleta de Dados" class="step-img graph-img">
                     </div>
-
-                    <div class="step-by-step-item animated">
-                        <div class="step-image">
-                            <div class="step-image">
-                                <img src="assets/images/ExemploNotificacao.gif"
-                                    alt="Animação de uma notificação de alerta chegando no WhatsApp.">
-                            </div>
-                        </div>
-                        <div class="step-content">
-                            <div class="step-number">02</div>
-                            <h3>Alertas Simples e Diretos</h3>
-                            <p>As orientações chegam via WhatsApp e SMS, dizendo o que, quando, como e porquê fazer –
-                                sem complicação.</p>
-                        </div>
+                    <div class="step-content">
+                        <div class="step-number">01</div>
+                        <h3 class="step-title">
+                            <i class="fas fa-database icon-before"></i> Coleta e Tratamento de Dados
+                        </h3>
+                        <p>Juntamos informações de solo e clima e as transformamos em recomendações práticas para o
+                            campo.</p>
                     </div>
                 </div>
+
+                <div class="solution-step reverse">
+                    <div class="step-image">
+                        <img src="assets/images/ExemploNotificacao.gif" alt="Alertas no celular" class="step-img">
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">02</div>
+                        <h3 class="step-title">
+                            <i class="fas fa-mobile-alt icon-before"></i> Simples e Diretos
+                        </h3>
+                        <p>As orientações chegam via WhatsApp e SMS, dizendo o que, quando, como e por que fazer – sem
+                            complicação.</p>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <section class="section dark-section" id="unfair-advantage">
             <div class="container">
-                <div class="section-title animated">
+                <div class="section-header">
                     <h2>Vantagem Competitiva</h2>
-                    <p>O que entregamos não é só informação, é solução prática para a sua roça.</p>
+                    <p>O que entregamos não é só informação, é solução prática para a sua roça.</p>
                 </div>
                 <div class="advantage-grid">
-                    <div class="advantage-item animated">
+                    <div class="advantage-item">
                         <div class="icon"><i class="fa-solid fa-hand-sparkles"></i></div>
                         <h3>Simplicidade</h3>
                         <p>Nada de complicação: se você tem WhatsApp, já pode usar. Sem outros aplicativos, sem
-                            burocracia,
-                            direto no seu celular.</p>
+                            burocracia, direto no seu celular.</p>
                     </div>
-                    <div class="advantage-item animated">
+                    <div class="advantage-item">
                         <div class="icon"><i class="fa-solid fa-map-location-dot"></i></div>
                         <h3>Conexão Total</h3>
                         <p>Tudo feito com foco na Alta Paulista: dados, parcerias e conhecimento que
-                            compreendem sua realidade.</p>
+                            compreendem sua realidade.</p>
                     </div>
-                    <div class="advantage-item animated">
+                    <div class="advantage-item">
                         <div class="icon"><i class="fa-solid fa-language"></i></div>
                         <h3>Ciência aplicada ao campo</h3>
                         <p>Nós coletamos os dados difíceis e Traduzimos em orientação prática para o produtor. Você
                             não
-                            recebe só números, recebe o caminho certo para agir.</p>
+                            recebe só números, recebe o caminho certo para agir.</p>
                     </div>
                 </div>
             </div>
@@ -146,7 +145,7 @@
             <div class="container">
                 <div class="section-title animated">
                     <h2>Canais de Acesso</h2>
-                    <p>Você pode contar com o Agro Solutio nos canais em que mais confia.</p>
+                    <p>Você pode contar com o Agro Solutio nos canais em que mais confia.</p>
                 </div>
                 <div class="channel-list animated">
                     <div class="channel-item">
@@ -155,7 +154,7 @@
                             <h3>Parceria com Cooperativas</h3>
                             <p>Por meio das cooperativas, oferecemos o Agro Solutio diretamente a você, com
                                 vantagens
-                                pensadas para os produtores associados.</p>
+                                pensadas para os produtores associados.</p>
                         </div>
                     </div>
                     <div class="channel-item">
@@ -163,7 +162,7 @@
                         <div>
                             <h3>WhatsApp</h3>
                             <p>Com o WhatsApp, você tira dúvidas, recebe suporte e acompanha novidades do Agro
-                                Solutio em tempo real.</p>
+                                Solutio em tempo real.</p>
                         </div>
                     </div>
                     <div class="channel-item">
@@ -171,55 +170,51 @@
                         <div>
                             <h3>Feiras e Eventos Rurais</h3>
                             <p>Estamos presentes nas feiras e eventos rurais da região, para mostrar de perto como o
-                                Agro Solutio pode apoiar você.</p>
+                                Agro Solutio pode apoiar você.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section dark-section" id="results">
+        <section class="section" id="results">
             <div class="container">
-                <div class="section-title animated">
+                <div class="section-header">
                     <h2>Análise da Região</h2>
-                    <div class="column-image animated">
+                </div>
+                <div class="two-column-layout">
+                    <div class="column-image">
                         <img class="mapa" src="assets/images/mapa.png" alt="Mapa da Nova Alta Paulista">
                     </div>
-                    <div class="results-grid animated">
-                        <div class="result-item">
-                            <span class="counter">35,4</span><span>%</span>
-                            <h3>Até 10 ha na região</h3>
-                        </div>
-                        <div class="result-item">
-                            <span class="counter">156.211</span><span>ha</span>
-                            <h3>Cana de Açúcar na Região de Dracena</h3>
-                        </div>
-                        <div class="result-item">
-                            <span class="counter">6.678</span><span>ha</span>
-                            <h3>Propriedade na Região de Tupã</h3>
+                    <div class="column-text">
+                        <div class="results-grid">
+                            <div class="result-item">
+                                <h3><span class="counter">35,4</span>%</h3>
+                                <p>Até 10 ha na região</p>
+                            </div>
+                            <div class="result-item">
+                                <h3><span class="counter">156.211</span> ha</h3>
+                                <p>Cana de Açúcar na Região de Dracena</p>
+                            </div>
+                            <div class="result-item">
+                                <h3><span class="counter">6.678</span></h3>
+                                <p>Propriedades na Região de Tupã</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <section class="section section-light" id="cta">
-            <div class="container">
-                <div class="section-title animated">
-                    <h2>Fontes de Receita</h2>
-                    <p>Um modelo de negócio sustentável, focado em parcerias B2B.</p>
-                </div>
-                <div class="cta-section animated">
-                    <h2 style="font-weight: 200;"><span class="price-highlight">R$ 49,90</span> / mês por produtor
-                    </h2>
+            <div class="container cta-container">
+                <h2>Fontes de Receita</h2>
+                <p>Um modelo de negócio sustentável, focado em parcerias B2B.</p>
+                <div class="cta-box">
+                    <h3><span class="price-highlight">R$ 49,90</span> / mês por produtor</h3>
                     <p>A cooperativa ou associação paga um valor mensal por produtor cadastrado, oferecendo a
                         plataforma
                         como um benefício exclusivo para seus membros.</p>
-                    <div class="revenue-streams">
-                        <p style="font-size: 13px;">Fonte Secundária: Patrocínio de insumos por empresas parceiras.
-                        </p>
-                    </div>
                     <button class="hero-button contact-modal-trigger">Seja um Parceiro</button>
                 </div>
             </div>
@@ -228,42 +223,19 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-icons" style="text-align: center; margin-bottom: 10px;">
-                <a href="https://www.instagram.com" target="_blank" rel="noopener"
-                    style="margin: 0 15px; color: inherit; text-decoration: none;">
-                    <i class="fab fa-instagram fa-2x"></i>
-                </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener"
-                    style="margin: 0 15px; color: inherit; text-decoration: none;">
-                    <i class="fab fa-x-twitter fa-2x"></i>
-                </a>
-                <a href="https://www.facebook.com" target="_blank" rel="noopener"
-                    style="margin: 0 15px; color: inherit; text-decoration: none;">
-                    <i class="fab fa-facebook fa-2x"></i>
-                </a>
-                <a href="mailto:seuemail@gmail.com" style="margin: 0 15px; color: inherit; text-decoration: none;">
-                    <i class="fas fa-envelope fa-2x"></i>
-                </a>
+            <div class="footer-icons">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:seuemail@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
-            <div class="footer-bottom" style="text-align: center;">
+            <div class="footer-bottom">
                 <p>2025 AgroSolutio. Todos os direitos reservados.</p>
-                <p class="hackathon-credit"></p>
             </div>
         </div>
     </footer>
 
     <div id="contactModal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <h2>Fale Conosco</h2>
-            <p>Preencha o formulário abaixo para agendar uma demonstração ou saber mais sobre parcerias.</p>
-            <form class="modal-form" action="/enviar-contato" method="POST">
-                <input type="text" name="name" placeholder="Seu Nome" required>
-                <input type="email" name="email" placeholder="Seu Email" required>
-                <textarea name="message" rows="4" placeholder="Sua Mensagem" required></textarea>
-                <button type="submit">Enviar Mensagem</button>
-            </form>
-        </div>
     </div>
 
     <script src="assets/js/script.js"></script>
